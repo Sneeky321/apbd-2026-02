@@ -7,6 +7,7 @@ Console.WriteLine("Hi");
 int[] array = { 12, 53, 69, 22, 329 };
 Console.WriteLine(CalculateMax(array));
 Console.WriteLine(CalculateAverage(array));
+Console.WriteLine(CalculateMin(array));
 
 
 static double CalculateMax(int[] values)
@@ -35,5 +36,13 @@ static double CalculateAverage(int[] values)
 
 static double CalculateMin(int[] values)
 {
-    return 0.0;
+    int min = values[0];
+    for (int i = 0; i < values.Length; i++)
+    {
+        if (values[i] < min)
+        {
+            min = values[i];
+        }
+    }
+    return min;
 }
