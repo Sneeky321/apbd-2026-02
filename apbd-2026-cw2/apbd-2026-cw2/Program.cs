@@ -32,3 +32,8 @@ static double CalculateAverage(int[] values)
     }
     return sum / values.Length;
 }
+
+static double CalculateMin(int[] values)
+{
+    return 0.0;
+}
