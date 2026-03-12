@@ -27,12 +27,12 @@ static double CalculateMax(int[] values)
 
 static double CalculateAverage(int[] values)
 {
-    int sum = 0;
+    int sUm = 0;
     for (int i = 0; i < values.Length; i++)
     {
-        sum += values[i];
+        sUm += values[i];
     }
-    return sum / values.Length;
+    return sUm / values.Length;
 }
 
 static double CalculateMin(int[] values)
