@@ -6,6 +6,7 @@ Console.WriteLine("Feature2");
 Console.WriteLine("Hi");
 int[] array = { 12, 53, 69, 22, 329 };
 Console.WriteLine(CalculateMax(array));
+Console.WriteLine(CalculateAverage(array));
 
 
 static double CalculateMax(int[] values)
@@ -20,4 +21,14 @@ static double CalculateMax(int[] values)
         }
     }
     return max;
+}
+
+static double CalculateAverage(int[] values)
+{
+    int sum = 0;
+    for (int i = 0; i < values.Length; i++)
+    {
+        sum += values[i];
+    }
+    return sum / values.Length;
 }
